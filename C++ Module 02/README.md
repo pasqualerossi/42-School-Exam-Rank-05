@@ -33,6 +33,7 @@ FORBIDDEN and its use would result in a -42.
 Create the following two spells, on the same model as Fwoosh:
 
 * Fireball (Name: "Fireball", Effects: "burnt to a crisp")
+
 * Polymorph (Name: "Polymorph", Effects: "turned into a critter")
 
 In addition to this, just so he won't have only dummy to attack, let's make a
@@ -42,13 +43,17 @@ Now, make a SpellBook class, in canonical form, that can't be copied or instanti
 by copy. It will have the following functions:
 
 * void learnSpell(ASpell*), that COPIES a spell in the book
+
 * void forgetSpell(string const &), that deletes a spell from the book, except
   if it isn't there
+
 * ASpell* createSpell(string const &), that receives a string corresponding to
   the name of a spell, creates it, and returns it.
 
 Modify the Warlock, now, make it have a spell book that will be created with
-him and destroyed with him. Also make his learnSpell and forgetSpell functions
+him and destroyed with him. 
+
+Also make his learnSpell and forgetSpell functions
 call those of the spell book.
 
 The launchSpell function will have to use the SpellBook to create the spell
@@ -70,16 +75,23 @@ It will have the following functions:
 Phew, that's done. Now here's a test main. It's not very thorough, so make sure 
 to use your own aswell.
 
+## Int Main
+
 int main()
+
 {
   Warlock richard("Richard", "foo");
+
   richard.setTitle("Hello, I'm Richard the Warlock!");
+
   BrickWall model1;
 
   Polymorph* polymorph = new Polymorph();
+
   TargetGenerator tarGen;
 
   tarGen.learnTargetType(&model1);
+
   richard.learnSpell(polymorph);
 
   Fireball* fireball = new Fireball();
@@ -89,14 +101,22 @@ int main()
   ATarget* wall = tarGen.createTarget("Inconspicuous Red-brick Wall");
 
   richard.introduce();
+
   richard.launchSpell("Polymorph", *wall);
+
   richard.launchSpell("Fireball", *wall);
 }
 
 ~$ ./a.out | cat -e
+
 Richard: This looks like another boring day.$
+
 Richard: I am Richard, Hello, I'm Richard the Warlock!!$
+
 Inconspicuous Red-brick Wall has been turned into a critter!$
+
 Inconspicuous Red-brick Wall has been burnt to a crisp!$
+
 Richard: My job here is done!$
+
 ~$
