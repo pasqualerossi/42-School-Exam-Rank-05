@@ -1,11 +1,11 @@
 # Exam Details
 3 Questions in C++
 
-:one: Warlock - Module 00
+:one: Warlock
 
-:two: Warlock, Aspell, Atarget, Dummy and Fwoosh - Module 01
+:two: Warlock, Aspell, Atarget, Dummy and Fwoosh
 
-:three: Warlock, Aspell, Atarget, Dummy, Fwoosh, BrickWall, Fireball, Polymorph, SpellBook and TargetGenerator - Module 02
+:three: Warlock, Aspell, Atarget, Dummy, Fwoosh, BrickWall, Fireball, Polymorph, SpellBook and TargetGenerator
 
 # Exam Practice
 
