@@ -1,38 +1,22 @@
 #include "Warlock.hpp"
-
-
-Warlock::Warlock(std::string name, std::string title) {
-
-	this->name = name;
-	this->title = title;
-	std::cout << this->name << ": This looks like another boring day.\n";
+		
+Warlock::Warlock(std::string const &name, std::string const &title) : name(name), title(title) 
+{
+	std::cout << name << ": This looks like another boring day." << std::endl;
 }
 
-Warlock::~Warlock() {
-
-	std::cout << this->name << ": My job here is done!\n";
-
+Warlock::~Warlock()
+{
+	std::cout << name << ": My job here is done!" << std::endl;
 }
 
-std::string Warlock::getName() const {
-
-	return (this->name);
+std::string const & Warlock::getName() const {return name;}
+std::string const & Warlock::getTitle() const {return title;}
+void Warlock::setTitle(std::string const &title){this->title = title;}
+void Warlock::introduce() const 
+{
+	std::cout << name << ": I am " << name << ", "<< title << "!" << std::endl;
 }
 
-
-std::string Warlock::getTitle() const {
-
-	return (this->title);
-}
-
-void	Warlock::setTitle(std::string title) {
-
-	this->title = title;
-}
-
-void	Warlock::introduce() const {
-
-	
-	std::cout << this->name << ": I am " << this->name << ", " << this->title << "!\n";
-}
-
+Warlock::Warlock(Warlock const & src) {*this = src;}
+Warlock & Warlock::operator=(Warlock const & src){this->name = src.name; this-> title=src.title; return *this;}
