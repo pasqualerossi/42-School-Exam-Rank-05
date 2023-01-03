@@ -1,31 +1,36 @@
-# Files
+# Expected files 
+:one: Warlock.cpp
 
-Assignment name: cpp01_02
+:two: Warlock.hpp
 
-Expected files: 
+:three: ASpell.cpp
 
-- Warlock.cpp 
-- Warlock.hpp
-- ASpell.hpp
-- ASpell.cpp
-- ATarget.hpp
-- ATarget.cpp
-- Fwoosh.hpp
-- Fwoosh.cpp
-- Dummy.hpp
-- Dummy.cpp
+:four: ASpell.hpp
 
-# Subject
+:five: ATarget.hpp
 
-In the Warlock class, the switch statement is FORBIDDEN and its use would
-result in a -42.
+:six: ATarget.cpp
 
-Create an abstract class called ASpell, in Coplien's form, that has the
-following protected attributes:
+:seven: Fwoosh.cpp
 
+:eight: Fwoosh.hpp
+
+:nine: Dummy.cpp
+
+:one: :zero: Dummy.hpp
+
+# Subect Text
+
+In the Warlock class, the ```switch``` statement is FORBIDDEN and its use would result in a -42.
+
+
+## Aspell
+
+Create an abstract class called ASpell, in Coplien's form, that has the following protected attributes:
+```
 * name (string)
 * effects (string)
-
+```
 Both will have getters (getName and getEffects) that return strings.
 
 Also add a clone pure method that returns a pointer to ASpell.
@@ -33,6 +38,9 @@ Also add a clone pure method that returns a pointer to ASpell.
 All these functions can be called on a constant object.
 
 ASpell has a constructor that takes its name and its effects, in that order.
+
+
+## ATarget
 
 Now you will create an ATarget abstract class, in Coplien's form. It has a type
 attribute, which is a string, and its associated getter, getType, that return a
@@ -47,10 +55,10 @@ It has a constructor that takes its type.
 Now, add to your ATarget a getHitBySpell function that takes a reference to
 constant ASpell.
 
-It will display:
-
+It will display :
+```
 <TYPE> has been <EFFECTS>!
-
+```
 <TYPE> is the ATarget's type, and <EFFECTS> is the return of the ASpell's
 getEffects function.
 
@@ -60,10 +68,14 @@ constant ATarget.
 This one will simply call the getHitBySpell of the passed object, passing the
 current instance as parameter.
 
-When all this is done, create an implementation of ASpell called Fwoosh. Its
-default constructor will set the name to "Fwoosh" and the effects to
-"fwooshed". You will, of course, implement the clone() method. In the case of
+
+## Fwoosh
+
+When all this is done, create an implementation of ASpell called Fwoosh. Its default constructor will set the name to "Fwoosh" and the effects to "fwooshed". You will, of course, implement the clone() method. In the case of
 Fwoosh, it will return a pointer to a new Fwoosh object.
+
+
+## Dummy
 
 In the same way, create a concrete ATarget called Dummy, the type of which
 is "Target Practice Dummy". You must also implement its clone() method.
@@ -80,13 +92,12 @@ Add to the Warlock the following member functions:
 You will need a new attribute to store the spells your Warlock knows. Several
 types fit the bill, it's up to you to choose the best one.
 
-Below is a possible test main and its expected output:
+# Main Function 
 
-## Int Main
-
+Below is a possible test main:
+```
 int main()
 {
-  
   Warlock richard("Richard", "the Titled");
 
   Dummy bob;
@@ -99,15 +110,13 @@ int main()
 
   richard.forgetSpell("Fwoosh");
   richard.launchSpell("Fwoosh", bob);
-  
 }
-
+```
+Output
+```
 ~$ ./a.out | cat -e
-  
 Richard: This looks like another boring day.$
-  
 Richard: I am Richard, the Titled!$
-  
 Target Practice Dummy has been fwooshed!$
-  
 Richard: My job here is done!$
+```
