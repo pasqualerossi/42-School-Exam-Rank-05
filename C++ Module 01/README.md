@@ -1,4 +1,4 @@
-# Expected files 
+# 10 Expected files 
 :one: Warlock.cpp
 
 :two: Warlock.hpp
@@ -17,7 +17,7 @@
 
 :nine: Dummy.cpp
 
-:one: :zero: Dummy.hpp
+:one::zero: Dummy.hpp
 
 # Subect Text
 
