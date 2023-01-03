@@ -1,4 +1,4 @@
-# Excepted Files
+# 2 Excepted Files
 
 :one: Warlock.cpp 
 
