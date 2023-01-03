@@ -1,5 +1,7 @@
 # 20 Expected files
 
+> 10 .cpp (c++ files) and 10 .hpp (header files)
+
 :one: Warlock.cpp
  
 :two: Warlock.hpp
