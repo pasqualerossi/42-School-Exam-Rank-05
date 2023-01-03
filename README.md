@@ -3,9 +3,9 @@
 
 :one: Warlock - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/tree/main/C%2B%2B%20Module%2000)
 
-:two: Question 1 and including Aspell, Atarget, Dummy and Fwoosh - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/tree/main/C%2B%2B%20Module%2001)
+:two: Question 1 and Aspell, Atarget, Dummy and Fwoosh - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/tree/main/C%2B%2B%20Module%2001)
 
-:three: Question 1 and Question 2 and including BrickWall, Fireball, Polymorph, SpellBook and TargetGenerator - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/tree/main/C%2B%2B%20Module%2002)
+:three: Question 1 and Question 2 and BrickWall, Fireball, Polymorph, SpellBook and TargetGenerator - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/tree/main/C%2B%2B%20Module%2002)
 
 # Exam Practice
 
