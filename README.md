@@ -7,6 +7,8 @@
 
 :three: Question 1, Question 2 and BrickWall, Fireball, Polymorph, SpellBook and TargetGenerator - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/tree/main/C%2B%2B%20Module%2002)
 
+<br>
+
 ### Total Excepted Files
 
 > 16 .cpp (c++ files) and 16 .hpp (header files) = 32 files total.
