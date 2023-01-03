@@ -1,5 +1,7 @@
 # 2 Excepted Files
 
+> 1 .cpp (c++ file) and 1 .hpp (header file)
+
 :one: Warlock.cpp 
 
 :two: Warlock.hpp
