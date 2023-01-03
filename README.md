@@ -1,11 +1,11 @@
 # Exam Details
 3 Questions in C++
 
-:one: Warlock
+:one: Warlock - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/tree/main/C%2B%2B%20Module%2000)
 
-:two: Warlock, Aspell, Atarget, Dummy and Fwoosh
+:two: Question 1 and including Aspell, Atarget, Dummy and Fwoosh - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/tree/main/C%2B%2B%20Module%2001)
 
-:three: Warlock, Aspell, Atarget, Dummy, Fwoosh, BrickWall, Fireball, Polymorph, SpellBook and TargetGenerator
+:three: Question 1 and Question 2 and including BrickWall, Fireball, Polymorph, SpellBook and TargetGenerator - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/tree/main/C%2B%2B%20Module%2002)
 
 # Exam Practice
 
