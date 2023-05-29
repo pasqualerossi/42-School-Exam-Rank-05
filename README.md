@@ -15,6 +15,6 @@
 
 <br>
 
-# Exam Practice
+# Exam Practice Tool
 
 Practice the exam just like you would in the real exam - https://github.com/JCluzet/42_EXAM
