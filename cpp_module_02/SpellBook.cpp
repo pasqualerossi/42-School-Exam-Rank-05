@@ -32,8 +32,12 @@ void SpellBook::learnSpell(ASpell* spell)
 
 void SpellBook::forgetSpell(std::string const & SpellName)
 {
-	if (_SpellBook.find(SpellName) != _SpellBook.end())
-		_SpellBook.erase(_SpellBook.find(SpellName));
+	std::map<std::string, ASpell*>::iterator it = _SpellBook.find(SpellName);
+	if (it != _SpellBook.end())
+	{
+		delete it->second;
+		_SpellBook.erase(it);
+	}
 }
 
 ASpell* SpellBook::createSpell(std::string const &SpellName)
