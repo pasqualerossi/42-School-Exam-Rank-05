@@ -24,6 +24,10 @@ Warlock::Warlock(Warlock const & obj)
 Warlock::~Warlock()
 {
 	std::cout << _name << ": My job here is done!" << std::endl;
+	for (std::map<std::string, ASpell*>::iterator it = _SpellBook.begin(); it != _SpellBook.end(); ++it) {
+		delete it->second;
+	}
+	_SpellBook.clear();
 }
 
 std::string const & Warlock::getName() const
@@ -49,7 +53,8 @@ void	Warlock::introduce() const
 void Warlock::learnSpell(ASpell* spell)
 {
 	if (spell)
-		_SpellBook[spell->getName()] = spell;
+		if (_SpellBook.find(spell->getName()) == _SpellBook.end())
+			_SpellBook[spell->getName()] = spell->clone();
 }
 
 void Warlock::forgetSpell(std::string SpellName)
