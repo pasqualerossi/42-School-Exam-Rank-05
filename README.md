@@ -1,11 +1,11 @@
 # Exam Details
 3 Questions in C++
 
-:one: Warlock - [Subject Text](https://github.com/mvomiero/42-School-Exam-Rank-05/blob/fix-ex02/cpp_module_00/subject.txt)
+:one: Warlock - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/blob/main/cpp_module_00/subject.txt)
 
-:two: Question 1 and Aspell, Atarget, Dummy and Fwoosh - [Subject Text](https://github.com/mvomiero/42-School-Exam-Rank-05/blob/fix-ex02/cpp_module_01/subject.txt)
+:two: Question 1 and Aspell, Atarget, Dummy and Fwoosh - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/blob/main/cpp_module_01/subject.txt)
 
-:three: Question 1, Question 2 and BrickWall, Fireball, Polymorph, SpellBook and TargetGenerator - [Subject Text](https://github.com/mvomiero/42-School-Exam-Rank-05/blob/fix-ex02/cpp_module_02/subject.txt)
+:three: Question 1, Question 2 and BrickWall, Fireball, Polymorph, SpellBook and TargetGenerator - [Subject Text](https://github.com/pasqualerossi/42-School-Exam-Rank-05/blob/main/cpp_module_02/subject.txt)
 
 <br>
 
