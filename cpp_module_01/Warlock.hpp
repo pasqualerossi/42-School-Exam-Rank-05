@@ -13,7 +13,7 @@ class Warlock {
 		std::map < std::string, ASpell * > _SpellBook;
 
 	public :
-		Warlock(std::string name, std::string title);
+		Warlock(std::string const &name, std::string const &title);
 		~Warlock();
 		std::string const & getName() const;
 		std::string const & getTitle() const;
