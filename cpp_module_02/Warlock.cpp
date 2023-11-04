@@ -1,6 +1,6 @@
 #include "Warlock.hpp"
 
-Warlock::Warlock(std::string name, std::string title) : _name(name), _title(title)
+Warlock::Warlock(std::string const &name, std::string const &title) : _name(name), _title(title)
 {
 	std::cout << _name << ": This looks like another boring day." << std::endl;
 }
