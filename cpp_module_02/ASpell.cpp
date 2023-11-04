@@ -34,5 +34,7 @@ std::string ASpell::getEffects() const
 
 void ASpell::launch(ATarget const & target) const
 {
-	target.getHitBySpell(*this);
+	const ATarget *tmp = &target; // checking this prevents SegFault 
+	if (tmp)                      // check if target is not unkown/NULL 
+		target.getHitBySpell(*this);
 }

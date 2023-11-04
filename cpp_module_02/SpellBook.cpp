@@ -26,7 +26,11 @@ void SpellBook::learnSpell(ASpell* spell)
 {
 	if (spell)
 	{
-		_SpellBook[spell->getName()] = spell->clone();
+		std::map<std::string, ASpell*>::iterator it = _SpellBook.find(spell->getName()); // avoid adding another if already exist!
+		if (it == _SpellBook.end())													// otherwise it will leak because of clone()
+		{
+			_SpellBook[spell->getName()] = spell->clone();
+		}
 	}
 }
 
