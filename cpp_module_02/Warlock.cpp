@@ -56,7 +56,7 @@ void Warlock::forgetSpell(std::string SpellName)
 	_SpellBook.forgetSpell(SpellName);
 }
 
-void Warlock::launchSpell(std::string SpellName, ATarget & target)
+void Warlock::launchSpell(std::string SpellName, ATarget const & target)
 {
 	if (_SpellBook.createSpell(SpellName))
 		_SpellBook.createSpell(SpellName)->launch(target);
