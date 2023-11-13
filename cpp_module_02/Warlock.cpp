@@ -1,6 +1,6 @@
 #include "Warlock.hpp"
 
-Warlock::Warlock(std::string name, std::string title) : _name(name), _title(title)
+Warlock::Warlock(std::string const &name, std::string const &title) : _name(name), _title(title)
 {
 	std::cout << _name << ": This looks like another boring day." << std::endl;
 }
@@ -56,7 +56,7 @@ void Warlock::forgetSpell(std::string SpellName)
 	_SpellBook.forgetSpell(SpellName);
 }
 
-void Warlock::launchSpell(std::string SpellName, ATarget & target)
+void Warlock::launchSpell(std::string SpellName, ATarget const & target)
 {
 	if (_SpellBook.createSpell(SpellName))
 		_SpellBook.createSpell(SpellName)->launch(target);
